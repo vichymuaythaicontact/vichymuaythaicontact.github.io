@@ -1,0 +1,251 @@
+<!-- Created by William -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Fiche d'inscription</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="fonts/font.txt" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>  
+
+  <style type="text/css">
+  @media print
+   {
+   body * { visibility: hidden; }
+   #print-content * { visibility: visible; }
+   #print-content { position: absolute; top: 40px; left: 30px; }
+   #print-content { size: 50%; }
+   }
+  </style>  
+
+</head>
+<body>
+  <div id="navigateur"></div>
+  
+  <div class="container">
+    <div class="section">
+      <p><br/></p>
+      <h5><a class="row center" href="https://drive.google.com/open?id=0Bws5syzpexgLRS1yZ3JpYWVCTVE" target="_blank">Cliquez ici pour télécharger la fiche d'inscription vierge.</a><br/>
+      ou remplir directement les champs suivants.</h5>
+      <div id="print-content" style="padding-left: 10px;">
+        <br/><br/>
+          <div class="row">w
+            <img class="col l2 m2 s2" src="imgs/logo/logo.jpg" alt="logo" height="200" width="200"/>
+            <h2  class="col l8 m8 s8"><center><b>Feuille d'adhésion</b><br/>Saison 2017-2018</center></h2>
+            <img class="col l2 m2 s2" src="imgs/tof.jpg" alt="logo" height="200" width="200"/>
+          </div>
+        <form id="couponWeb" name="couponWeb" method="POST" action="">
+          <div class="row">
+              <label class="col l2 m2 s2" for="nom"><h6>Nom</h6></label>
+              <input class="col l5 m5 s5" type="text" name="nom" id="nom" value="" />
+              <label class="col l1 m1 s1" for="prenom"><h6>Prénom</h6></label>
+              <input class="col offset-l1 l3 offset-m1 m3 offset-s1 s3" type="text" name="prenom" id="prenom" value="" />
+          </div>
+          <div class="row">
+            <label class="col l3 m3 s3" for="adresse"><h6>Adresse complète</h6></label>
+            <input class="col l9 m9 s9" type="text" name="adresse" id="adresse" value="" />
+          </div>
+          <div class="row">
+            <label class="col l2 m2 s2" for="telephone"><h6>Téléphone</h6></label>
+            <input class="col l2 m2 s2" type="text" name="telephone" id="telephone" value="" />
+            <label class="col l1 m1 s1" for="email"><h6>Email</h6></label>
+            <input class="col l7 m7 s7" type="text" name="email" id="email" value="" />
+          </div>
+          <div class="row">
+            <label class="col l4 m4 s4" for="ville"><h6>Date et lieu de naissance</h6></label>
+            <input class="col l8 m8 s8" type="text" name="ville" id="ville" value="" />
+          </div>
+          <div class="row">
+            <input name="group1" type="radio" id="moins15" />
+            <label class="col l2 m2 s6 center" for="moins15">- 15 ans</label>
+            <input name="group1" type="radio" id="plus15" />
+            <label class="col l2 m2 s6 center" for="plus15">+ 15 ans</label>
+            <input name="group2" type="radio" id="homme" />
+            <label class="col l2 m2 s6 offset-l2 offset-m2 center" for="homme">Homme</label>
+            <input name="group2" type="radio" id="femme" />
+            <label class="col l2 m2 s6 center" for="femme">Femme</label>
+          </div>
+
+          <div class="row">
+            <input name="group3" type="checkbox" id="muaythai" />
+            <label class="col l2 m2 s6 center" for="muaythai">Muay thaï</label>
+            <input name="group5" type="checkbox" id="sma" />
+            <label class="col l2 m2 s6 center" for="sma">S.M.A</label>
+            <input name="group4" type="radio" id="competiteur" />
+            <label class="col l2 m2 s6 offset-l2 offset-m2 center" for="competiteur">Competiteur</label>
+            <input name="group4" type="radio" id="loisir" />
+            <label class="col l2 m2 s6 center" for="loisir">Loisir</label>
+          </div>
+          <div class="row">
+            <h6 class="col offset-l1"><center>L'adhesion annuelle vous donne le droit de pratiquer les DEUX disciplines sans majoration (hors licences).</center></h6>
+          </div>
+          <div style="border: solid green 2px;">
+            <div class="row center" >
+              <h6 class="col l12" >Vous devez fournir un certificat médical avec la mention: <br/>
+                  "Pas de contre indication à la pratique du MuayThaï et/ou la Self-defense"
+              </h6>
+              <em class="col l12">&#42; Attention pour ceux qui sont en possession d'un passeport, le certificat médiacal doit être inscrit dessus</em>
+            </div>
+          </div>
+          <div class="row">
+            <h6 class="col grey-text"> Personne(s) à prevenir si nécessaire:</h6>
+          </div>
+          <div class="row">
+            <label class="col l2 m2 s3" for="personne1"><h6>Mme/M.</h6></label>
+            <input class="col l7 m7 s6" type="text" name="personne1" id="personne1" value="" />
+            <label class="col l1 m1 s1" for="personne1tel"><h6>Tèl</h6></label>
+            <input class="col l2 m2 s2" type="text" name="personne1tel" id="personne1tel" value="" />
+          </div>
+          <div class="row">
+            <label class="col l2 m2 s3" for="personne2"><h6>Mme/M.</h6></label>
+            <input class="col l7 m7 s6" type="text" name="personne2" id="personne2" value="" />
+            <label class="col l1 m1 s1" for="personne2tel"><h6>Tèl</h6></label>
+            <input class="col l2 m2 s2" type="text" name="personne2tel" id="personne2tel" value="" />
+          </div>
+          <div class="row">
+            <label class="col l2 m2 s3" for="medecin"><h6>Medecin Traitant</h6></label>
+            <input class="col l7 m7 s6" type="text" name="medecin" id="medecin" value="" />
+            <label class="col l1 m1 s1" for="medecintel"><h6>Tèl</h6></label>
+            <input class="col l2 m2 s2" type="text" name="medecintel" id="medecintel" value="" />
+          </div>
+          <div class="row">
+            <label class="col l6 m6 s6" for="accessoire"><h6>Accessoire(lunettes, lentilles, prothèses, etc...)</h6></label>
+            <input class="col l6 m6 s6" type="text" name="accessoire" id="accessoire" value="" />
+          </div>
+          <div class="row">
+            <ul class="grey-text">
+              <li class="col l12">Le montant de la licence + l’adhésion annuelle au club en muaythai</li>
+              <li class="col l12">150,00€</li>
+              <li class="col l12">Le montant de la licence + l’adhésion annuelle au club pour les moins de 15 ans en muaythai</li>
+              <li class="col l12">100,00€</li>
+              <li class="col l12">Le montant de la licence + l’adhésion annuelle au club en self-défense</li>
+              <li class="col l12">110,00€</li>
+              <li class="col l12">Le montant des licences + l’adhésion annuelle au club en muaythai et en self-défense</li>
+              <li class="col l12"> 170,00€</li>
+            </ul>
+          </div>
+          <div class="row">
+            <label class="col l4" for="sport"><h6>Autres activités sortives pratiquées</h6></label>
+            <input class="col l8" type="text" name="sport" id="sport" value="" />
+          </div>
+          <div class="row">
+            <br/><br/>
+            <p class="col">
+              Votre inscription au Vichy Muaythaï Contact vous donne droit aux garanties acquises par l’adhésion de notre club à la Fédération Française de Kick-Boxing, de Muaythaï et Disciplines Associées (FFKMDA) et à l’Union Nationale Sportive de Stratégie et maîtrise d’Adversaires (UNSSMA).<br/>
+              <b>Responsabilité Civile</b> <br/>
+              Lorsque l’adhérent est reconnu responsable d’un accident pendant ou à l’occasion de la pratique sportive<br/>
+              <b>Individuelle Accident <br/></b>
+                Frais médicaux, chirurgicaux, hospitaliers, capital décès, indemnité permanente, prothèses etc...<br/>
+            </p>
+            <p class="col">
+                CEPENDANT NOUS ATTIRONS VOTRE ATTENTION SUR LES FAITS SUIVANT<br/>
+                <b>Aucune garantie de perte de salaire ou de revenu n’est comprise dans la licence assurance. Un adhérant n’effectuant pas les démarches administratives de sécurité sociale ne pourra obtenir qu’un remboursement partiel de l’assureur</b></p>
+            <p class="col">
+              Veuillez lire et reproduire de manière manuscrite la mention suivante :<br/>
+              <em>"J'affirme avoir été informé(e) de la couverture des risques à laquelle me donne le droit la licences FFKMDA et/ou UNSMA"</em>
+            </p>
+          </div>
+          <div class="row">
+            <label class="col l12" for="cheque"><h6>Réglement de la somme de</h6></label>
+            <input class="col l12" type="text" name="cheque" id="cheque" value="" />
+            <label class="col l12" for="numerocheque"><h6>€ par chèque N°</h6></label>
+            <input class="col l5" type="text" name="numerocheque" id="numerocheque" value="" />
+            <label class="col l1"></label>
+            <input class="col l5" type="text" name="numerocheque" id="numerocheque" value="" />
+            <input class="col l5" type="text" name="numerocheque" id="numerocheque" value="" />
+            <label class="col l1"></label>
+            <input class="col l5" type="text" name="numerocheque" id="numerocheque" value="" /> 
+            <label class="col l12" for="banquecheque"><h6>Banque</h6></label>
+            <input class="col l12" type="text" name="banquecheque" id="banquecheque" value="" />
+          </div>
+          <div class="row">
+            <label class="col l12" for="liquide"><h6>Réglement en numéraires de la somme de:</h6></label>
+            <input class="col l12" type="text" name="liquide" id="liquide" value="" />
+          </div>
+          <div class="row">
+            <p class="row">Reglement par un autre moyens:</p>
+            <input name="chequier" type="checkbox" id="ancv" />
+            <label class="col l4 m4 s4 center" for="ancv">Cheque vancances ANCV</label>
+            <input name="chequier" type="checkbox" id="vichycommunauté"/>
+            <label class="col l4 m4 s4 center" for="vichycommunauté">Chéquier Vichy communauté</label>
+            <input name="chequier" type="checkbox" id="passregion"/>
+            <label class="col l4 m4 s4 center" for="passregion">Pass région</label>
+          </div>
+          <br/>
+          <div class="row">
+            <p class="col l12 m12 s12">Pour le bon fonctionnement,nous vous demandons de bien vouloir:<br/></p>
+            <input name="reglement" type="checkbox" id="reglement"/>
+            <label class="col l12 m12 s12 center" for="reglement">
+                  Accepter le <a href="https://drive.google.com/open?id=0Bws5syzpexgLM0JYV0RCbDItdkk" target="_blank">réglement intérieur
+                  et des modalités d'assurances</a>
+            </label>
+            
+          </div>
+          <div class="row">
+            <p class="row"><b><u>Signature obligatoire du licencié ou du responsable légal pour les mineurs.</u></b></p>
+            <label class="col l1 m1 s1" for="date"><h6>Le</h6></label>
+            <input class="col l4 m5 s5" type="text" name="date" id="date" value="" />
+            <label class="col l1 m1 s1" for="ville"><h6>A</h6></label>
+            <input class="col l4 m5 s5" type="text" name="ville" id="ville" value="" />
+            <p class="row"></p>
+            <label class="col l4 m4 s4" for="name"><h6>Nom / Prénom</h6></label>
+            <input class="col l8 m8 s8" type="text" name="name" id="name" value="" />
+            <br/>
+            <label class="col l2 m2 s2" for="signature"><h6>Signature</h6></label>
+            <input class="col l10 m10 s10" type="text" name="signature" id="signature" value="" />
+          </div>
+        </form>   
+    </div>
+    <div class="row">
+        <a onclick="window.print()" href="#" class="col l12 center">Cliquez ici pour imprimer votre fiche d'inscription</a>
+    </div> 
+    </div>
+  </div>
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light gym" style="color: white;">Retrouvez nous dans le gymnase des celestins</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="imgs/gymnase.jpg" alt="gymnase des celestin"></div>
+  </div>
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h4>Les documents utiles</h4>
+            <li><a href="https://drive.google.com/open?id=0Bws5syzpexgLM0JYV0RCbDItdkk" target="_blank">réglement intérieur et modalités d'assurances.</a></li>
+            <li><a href="https://drive.google.com/open?id=0Bws5syzpexgLUENuRnpRQ2FHcFU" target="_blank">Certificats médicales ( competiteurs ).</a></li>
+            <li><a href="https://drive.google.com/open?id=0Bws5syzpexgLMFJvNWNXUmlrUkU" target="_blank">Certificats médicales ( loisir ).</a></li>
+            <li><a href="https://drive.google.com/open?id=0Bws5syzpexgLR2JhWG0zMkVVMjg" target="_blank">Autorisation parentale de pratique et de soins.</a></li>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="pied-page"></div>
+
+
+  <!--  Scripts-->
+  <script>
+    var h6 = document.getElementsByTagName("h6")
+    for(i =0; i< h6.length ; i++){
+      h6[i].setAttribute("class", "black-text")
+    };
+    var li = document.getElementsByTagName("li")
+    for(i =0; i< li.length ; i++){
+      li[i].setAttribute("class", "black-text")
+    };
+  </script>
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="js/init.js"></script>
+  </body>
+</html>

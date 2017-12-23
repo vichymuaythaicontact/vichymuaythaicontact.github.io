@@ -1,0 +1,76 @@
+nav ul .liens{
+  width: 50px;
+  margin-right: 8px;
+  text-align: center;
+}
+
+nav .brand-logo {
+  width: 60px;
+  height: 60px;
+  padding-top: 5px;
+}
+
+.justify{
+  text-align:justify;
+}
+.facebook svg:hover{
+  color: blue;
+}
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+  nav .brand-logo {
+  width: 55px;
+  height: 55px;
+  padding-top: 5px;
+}
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+  nav .brand-logo {
+  width: 50px;
+  height: 50px;
+  padding-top: 5px;
+}
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.parallax img{
+  display:block;
+}
+
